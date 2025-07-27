@@ -1,0 +1,189 @@
+@charset "ISO-8859-1";
+body {
+	background: url('../images/background.jpg') no-repeat top fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#del {
+	width: 300px;
+	background-color: rgb(128, 255, 128);
+	color: rgb(30, 29, 23);
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 15px;
+	line-height: 48px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.album-details {
+    width: 35%;
+    margin: 0 0 45px 10%;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    padding: 10px 0px 15px 0px;
+    box-shadow: 0px 10px 20px 10px orangered;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.album-details img {
+	width:90%;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.album-details button {
+	font-size: 15px;
+}
+
+#logout, #profile-link {
+	float: left;
+	height:50px;
+	text-decoration: none;
+	padding: 0px 5px 0px 5px; 
+	line-height: 48px;
+	font-size: 15px;
+	color: white;
+	transition: 0.5s;
+	margin-right: 5px;
+}
+
+#logout:hover, #profile-link:hover {
+	color: black;
+	background-color: orangered;
+	border-radius: 9px 9px 9px 9px;
+}
+
+.sort-form {
+	float: left;
+	height:50px;
+	padding: 0px 5px 0px 5px;
+	line-height: 48px;
+}
+
+.input-field, select {
+	font-size: 15px;
+	margin: 0px 5px 0px 5px;
+	
+}
+
+.search-form {
+	float: left;
+	height:50px;
+	padding: 0px 5px 0px 5px;
+	line-height: 45px;
+}
+
+.header-menu {
+	position: fixed;
+	height: 50px;
+	background-color: black;
+	color: white;
+	box-shadow: 0px 10px 20px 3px orangered;
+	border-radius: 10px 10px 10px 10px;
+	z-index: 1000;
+	left: 50%;
+    transform: translateX(-50%);
+    width: 1275px;
+}
+
+.input-button, .add-button{
+	transition: 0.5s;
+} 
+
+.input-button:hover, .add-button:hover{
+	background: rgba(187, 189, 191, 100);
+	cursor: pointer;
+} 
+
+.header-bottom-layer {
+	height: 50px;
+	left: 50%;
+    transform: translateX(-50%);
+    width: 1268px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+	width: 100px;
+}
+
+.cart {
+	width: 634px;
+	text-align: center;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), black, rgba(255, 255, 255, 0));
+	margin: 0 auto;
+	border-radius: 20px 20px 20px 20px;
+	color: white;
+	padding: 10px 0px 20px 0px;
+}
+
+.cart table {
+	margin: 0 auto;
+	color: black;
+	background-color: white;
+	font-size: 15px;
+}
+
+.cart button, .cart input {
+	font-size: 15px;
+	border: none;
+	color: black;
+	background-color: white;
+	transition: 0.5s;
+}
+
+.cart button:hover, .cart input:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+.cart td {
+	text-align: left;
+	padding: 5px 5px 5px 5px;
+}
+
+#admin-second-header {
+	position: fixed;
+	height: 50px;
+	background-color: black;
+	color: white;
+	box-shadow: 0px 10px 20px 3px orangered;
+	border-radius: 10px 10px 10px 10px;
+	z-index: 1000;
+	left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+}
+
+#admin-second-header a {
+	width:125px;
+	float: left;
+	color: white;
+	font-size: 15px;
+	height: 50px;
+	text-align: center;
+	line-height: 48px;
+	text-decoration: none;
+	border-radius: 9px 9px 9px 9px;
+	transition: 0.5s;
+}
+
+#admin-second-header a:hover {
+	background-color: orangered;
+	color: black;
+}
+
+#sh-bottom-layer {
+	height: 50px;
+	border-radius: 10px 10px 10px 10px;
+	left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    margin-bottom: 30px;
+}

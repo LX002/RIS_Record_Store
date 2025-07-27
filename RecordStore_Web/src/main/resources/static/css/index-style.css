@@ -1,0 +1,50 @@
+@charset "ISO-8859-1";
+body {
+    background: url('../images/background.jpg') no-repeat top fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-form {
+	width: 600px;
+	margin: 60px auto;
+	text-align: center;
+	background-color: white;
+	font-size: 30px;
+	padding: 10px 10px 20px 10px;
+	box-shadow: 0px 10px 10px 10px orangered;
+}
+
+.login-form a {
+	text-decoration: none;
+	color: orangered;
+}
+
+.login-form a:hover {
+	text-decoration: underline;
+}
+
+.login-form table {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.login-form input{
+	font-size: 30px;
+}
+
+#login-button {
+	text-align: center;
+	font-size: 30px;
+}
+
+.error {
+	text-align: center;
+	color:wheat;
+	background-color: red;
+	font-weight: bold;
+	width: 300px;
+	padding: 10px;
+	margin: 30px auto;
+	font-size: 20px;
+}

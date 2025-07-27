@@ -1,0 +1,82 @@
+@charset "ISO-8859-1";
+body {
+	background: url('../images/background.jpg') no-repeat top fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.insertion-form {
+	width: 800px;
+	margin: 20px auto;
+	text-align: center;
+	background-color: white;
+	font-size: 30px;
+	padding: 10px 10px 20px 10px;
+	box-shadow: 0px 10px 10px 10px orangered;
+}
+
+.insertion-form form table {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.input-field {
+	width: 100%;
+}
+
+.insertion-form td{
+	text-align: left;
+}
+
+.insertion-form input{
+	font-size: 30px;
+}
+
+#back {
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+	background-color: white;
+	transition: 0.5s;
+	text-decoration: none;
+	color: black;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#back:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	box-shadow: 0px 5px 5px 5px orangered;
+}
+
+.error {
+	width: 317px;
+	background-color: orangered;
+	color: wheat;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 15px;
+}
+
+.success {
+	width: 317px;
+	background-color: rgb(128, 255, 128);
+	color: rgb(30, 29, 23);
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 15px;
+}
+
+.success a {
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.success a:hover {
+	background-color: rgb(128, 255, 128);
+	color: rgb(30, 29, 23);
+}

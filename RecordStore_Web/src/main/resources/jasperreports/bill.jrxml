@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bill" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="523d9105-6eaa-46aa-b96f-3f0179035bcb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="priceP" class="java.lang.Double"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="album.naziv" class="java.lang.String"/>
+	<field name="album.izvodjac" class="java.lang.String"/>
+	<field name="kolicina" class="java.lang.Integer"/>
+	<field name="album.cena" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="150" height="50" uuid="a31514d7-45f1-41e1-9a71-50615ff2998f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Your order:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="90" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement mode="Opaque" x="80" y="60" width="100" height="30" backcolor="#7BDFE8" uuid="69e2a65e-0399-4cc7-ace4-2a00290baa6a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7f5e9da8-a6d3-4fa1-9012-6723891e4960"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Album name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="60" width="100" height="30" backcolor="#7BDFE8" uuid="89e3a197-8bbb-4799-ae21-b159261826d2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7112bc73-4b6d-414f-809f-99afa8dfec71"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Album artist]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="280" y="60" width="100" height="30" backcolor="#7BDFE8" uuid="a001dcec-c9af-4abd-ba8e-679e86d29ab1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5e042dd9-6d90-4474-9edc-e34c7648df40"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="380" y="60" width="100" height="30" backcolor="#7BDFE8" uuid="2c7d9956-5ff1-44d8-b762-9f0263b3f349">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1462e1ee-d744-48fb-a8fe-ba76e96331f7"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Price per unit]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="280" y="0" width="100" height="30" uuid="4e024025-c0f0-4482-b54b-91068763310c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5e042dd9-6d90-4474-9edc-e34c7648df40"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kolicina}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="100" height="30" uuid="341ddf0c-24b2-470f-a647-84ab5483ecd2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1462e1ee-d744-48fb-a8fe-ba76e96331f7"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{album.cena}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="b615d2aa-afe2-4ad2-a098-e96973f30f69">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7112bc73-4b6d-414f-809f-99afa8dfec71"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{album.izvodjac}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="100" height="30" uuid="41b59275-5358-48ca-aa18-2ecdd2c82ff0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7f5e9da8-a6d3-4fa1-9012-6723891e4960"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{album.naziv}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="16" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="6" width="40" height="30" uuid="cc83abd6-8119-4ae2-9997-a7a51fa8e4fa"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="6" width="70" height="30" uuid="2cd43f33-1d19-414c-821c-5f2a420a1861"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{priceP}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
